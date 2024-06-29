@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Log</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #003DA5;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .foodlog-container {
+      text-align: center;
+      margin-top: 50px;
+      flex: 1;
+    }
+    button {
+      margin: 10px;
+      padding: 10px;
+      background-color: #003DA5;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="date"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    .navbar {
+      background-color: #fff;
+      color: #003DA5;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .navbar a {
+      color: #003DA5;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="foodlog-container">
+    <h2>Key-In Food</h2>
+    <label for="logDate">Date:</label>
+    <input type="date" id="logDate" required><br><br>
+    
+    <div>
+      <h3>Breakfast</h3>
+      <button onclick="addFood('breakfast')">Add Food</button>
+    </div>
+    <div>
+      <h3>Lunch</h3>
+      <button onclick="addFood('lunch')">Add Food</button>
+    </div>
+    <div>
+      <h3>Dinner</h3>
+      <button onclick="addFood('dinner')">Add Food</button>
+    </div>
+  </div>
+  
+  <div class="navbar">
+    <a href="goal.html">Goal</a>
+    <a href="package.html">Package</a>
+  </div>
+  
+  <script src="js/foodlog.js"></script>
+</body>
+</html>

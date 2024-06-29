@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #003DA5;
+    }
+    .signup-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, select {
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px;
+      background-color: #003DA5;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>INSERT YOUR DETAILS</h2>
+    <form id="signup-form">
+      <input type="text" placeholder="Gender" id="gender" required><br>
+      <input type="number" placeholder="Body Weight" id="weight" required><br>
+      <input type="number" placeholder="Body Height" id="height" required><br>
+      <input type="number" placeholder="Target Weight" id="targetWeight" required><br>
+      <select id="activity" required>
+        <option value="" disabled selected>Select Activity Level</option>
+        <option value="Not Active">Not Active</option>
+        <option value="Lightly Active">Lightly Active</option>
+        <option value="Really Active">Really Active</option>
+      </select><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="js/details.js"></script>
+</body>
+</html>
